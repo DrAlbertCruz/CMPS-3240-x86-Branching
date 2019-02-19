@@ -10,7 +10,26 @@ main:
 	.cfi_offset 6, -16
 	movq	%rsp, %rbp		# Adjust base and stack pointers
 	.cfi_def_cfa_register 6
-mulsd %xmm0, %xmm1
+	mulsd \0mm0, \0mm1
+	mulsd \0mm0, \0mm1
+	mulsd \0mm0, \0mm1
+	mulsd \0mm0, \0mm1
+	mulsd \0mm0, \0mm1
+	mulsd \0mm0, \0mm1
+	mulsd \0mm0, \0mm1
+	mulsd \0mm0, \0mm1
+	mulsd \0mm0, \0mm1
+	mulsd \0mm0, \0mm1
+	mulsd \0mm0, \0mm1
+	mulsd \0mm0, \0mm1
+	mulsd \0mm0, \0mm1
+	mulsd \0mm0, \0mm1
+	mulsd \0mm0, \0mm1
+	mulsd \0mm0, \0mm1
+	mulsd \0mm0, \0mm1
+	mulsd \0mm0, \0mm1
+	mulsd \0mm0, \0mm1
+	mulsd \0mm0, \0mm1
 	movl	$1, %eax		# Set up to return 1
 	popq	%rbp			# Pop the stack
 	.cfi_def_cfa 7, 8
