@@ -1,3 +1,4 @@
+.ACC0:
 	movl	$1, %eax		# Set up to return 1
 	popq	%rbp			# Pop the stack
 	.cfi_def_cfa 7, 8
